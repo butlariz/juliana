@@ -1,0 +1,39 @@
+/////// CORES VARIAVEIS
+
+$negacao: #BA5040;
+$afirmacao: #77a464;
+
+:root {
+	--fundo:#FAF5F0;
+	--grafite: #4D4D4D; // texto
+	
+	--bege: #D0B287;
+	--bege-claro: #F4EBE0;
+	--bege-escuro: #B89973;
+
+	--verde: #9EA082;
+	--verde-claro: #C7C8BA;
+	--verde-escuro: #929473;
+}
+
+
+/////// FAMILIAS VARIAVEIS
+$fonte-padrao: 'Lato',sans-serif;
+$fonte-titulos: 'Madelon',cursive;
+$fonte-icone: 'Font Awesome 5 Pro';
+$fonte-marca: 'Font Awesome 5 Brands';
+
+
+/////// MEDIA QUERIES e TAMANHOS
+$container: 	1180px;
+$tablet: 		950px;
+$smartphone: 	640px;
+$celular: 		480px;
+
+$coluna-artigo: 630px;
+
+
+/////// IMPORTACOES
+@import "../padroes/mixins"; // mixins criados por mim que uso muito
+@import "../padroes/fontface"; // fonts personalizadas
+@import "../padroes/fontawesome"; // pacote de icones fontawesome versao pro

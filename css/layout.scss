@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import "padroes/reset"; // reset css para crossborwser
+@import "padroes/predefinicoes";
+@import "padroes/formatacoes";
+@import "padroes/fancybox";
+@import "padroes/fontawesome";
+@import "layout/contact";
+@import "layout/geral";
+@import "layout/materiais";
+@import "layout/newsletter";
+@import "layout/post";
+@import "layout/sobre";
+
+
+/////// LAYOUT
+body, html {
+	overflow-x: hidden;
+	background-color: black;
+	&.noscroll {overflow: hidden;}
+}
+
+body {
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.6;
+	color: var(--grafite);
+	font-family: $fonte-padrao;
+	letter-spacing: 0.04em;
+	position: relative;
+	background-color: var(--fundo);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 2250px auto;
+	background-image: url('../imgs/fundo-paginasinternas.png');
+	@media (max-width: $smartphone) { font-size: 15px; }
+
+	// suporte para webp
+	&.afc-suporte-webp { background-image: url('../imgs/fundo-paginasinternas.webp'); }	
+
+	// fundo para retina
+	@media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+		background-image: url('../imgs/fundo-paginasinternas@2x.png');
+
+		// suporte para webp
+		&.afc-suporte-webp { background-image: url('../imgs/fundo-paginasinternas@2x.webp'); }
+	}
+	
+}

@@ -1,0 +1,120 @@
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $smartphone) {
+        padding: 40px;
+        flex-direction: column;
+	}
+}
+
+.contact-form {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $smartphone) {
+        width: 100%;
+	}
+}
+
+.contact-input {
+    background-color: var(--bege-claro);
+    display: flex;
+    width: 33%;
+    height: 50px;
+}
+
+input[type=text].contact-input-inner {
+    margin-top: 0px;
+    line-height: 0px;
+    padding: 0px;
+}
+
+input[type=text].contact-input-inner::placeholder {
+    font-style: italic;
+}
+
+.contact-icon {
+    color: var(--verde-escuro);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.grow-1 {
+    flex-grow: 1
+}
+
+.grow-2 {
+    flex-grow: 2;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-margin {
+    margin-right: 15px;
+}
+
+.contact-top {
+    margin-top: 15px;
+}
+
+.contact-textarea {
+    height: 200px;
+}
+
+a.contact-link {
+    color: var(--verde-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-text {
+    width: 46%;
+    text-align: center;
+
+    @media (max-width: $smartphone) {
+        width: 100%;
+        margin-top: 50px;
+	}
+}
+
+.contact-text::after {
+    content: '';
+    display: block;
+    width: 135px;
+    height: 150px;
+    background: url(../imgs/bitmoji-4.png) no-repeat;
+    background-size: 100%;
+    margin-left: auto;
+    right: 0;
+    position: relative;
+    top: 140px;
+
+    @media (max-width: $smartphone) {
+        top: 55px;
+	}
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    color: var(--verde-escuro);
+    margin-top: 20px;
+}
+
+.link-item {
+    font-weight: bold;
+    margin: 0 20px;
+    font-size: 18px;
+}

@@ -1,0 +1,251 @@
+/****************************************
+ ----------------------------------------
+ * DEFINICOES PADRAO DE INICIO DE LAYOUT *
+ ----------------------------------------
+ ****************************************/
+// links
+a {
+	&:link, &:visited, &:active, &:focus {
+		outline: 0;
+		// color: var(--primary-color);
+		-webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		    -ms-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+		text-decoration: none;
+	}
+	&:hover { text-decoration:none; }
+}
+b, strong {
+	font-weight: bold;
+	color: inherit;
+}
+u {
+	text-decoration: underline;
+}
+i, em {
+	color: inherit;
+	font-style: italic;
+}
+s, del {
+	text-decoration: line-through;
+}
+
+p, ul, ol, blockquote {
+	margin-bottom: 1.8em;
+}
+
+small {
+	font-size: 80%;
+}
+
+center {
+	text-align: center;
+}
+
+// titulos
+h2, h3, h4, h5 {
+	line-height: 1.2;
+	display: block;
+	color: inherit;
+    font-family: $fonte-titulos;
+
+	a {
+		text-decoration:none !important;
+	}
+}
+
+h1 {
+	line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 2.1em;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--bege-escuro);
+}
+
+h2 { 
+	font-size: 1.8em; 
+	@media (max-width: $smartphone) {
+		font-size: 1.7em;
+	}
+}
+h3 { 
+	font-family: $fonte-padrao;
+	font-size: 1.1em; 
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1.2em;
+	letter-spacing: 0;
+
+	@media (max-width: $smartphone) {
+		font-size: 1.4em;
+	}
+}
+h4 { 
+	font-size: 1.45em;
+	@media (max-width: $smartphone) {
+		font-size: 1.3em;
+	}
+}
+h5 { 
+	font-size: 1.15em; 
+	@media (max-width: $smartphone) {
+		font-size: 1.1em;
+	}
+}
+h6 { font-size: 1em; }
+
+
+// quote
+blockquote {
+	font-size: 1em;
+	color: inherit;
+	p:last-of-type {margin-bottom: 0;}
+}
+
+// inputs
+input, button, textarea {
+	@include appearance(none);
+	border: 0;
+	outline: 0;
+	font-family: inherit;
+	background: transparent;
+	font-size: inherit;
+}
+
+// caixas de texto e selects pra contato e afins
+input[type=text], input[type=tel], input[type=email], input[type=name], input[type=password], input[type=number], input[type=search], textarea {
+	width: 100%;
+	margin-top: 20px;
+	vertical-align:middle;
+	white-space:normal;
+	display: block;
+	padding: 0 15px;
+	line-height: 40px;
+	font-size: 1em;
+	// color: var(--primary-color);
+	// background: var(--white-color);
+    // font-family: $fonte-padrao;
+
+	&:focus {
+		outline:0;
+	}
+}
+
+textarea {
+	padding: 15px;
+	line-height: 1.65; 
+	// font-family: $fonte-padrao;
+}
+
+
+[type="radio"] {@include appearance(radio);}
+[type="checkbox"] {@include appearance(checkbox);}
+
+
+a.button, button.button, .button, .enviar input[type="submit"] {
+	display: inline-block;
+	outline: 0;
+	letter-spacing: 0.09em;
+	line-height: 1;
+	cursor: pointer;
+	padding: .8em 1.5em;
+    position: relative;
+    font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: nowrap;
+	font-family: $fonte-titulos;
+	box-shadow: none;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out, transform 0.2s ease-in-out;
+	   -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out, transform 0.2s ease-in-out;
+	    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out, transform 0.2s ease-in-out;
+	     -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out, transform 0.2s ease-in-out;
+	        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out, transform 0.2s ease-in-out;	
+
+	&:hover, &:focus {
+	    text-decoration: none !important;
+	}
+
+	// &.mini { font-size: .65em !important; padding: .6em 1.2em !important}
+	// &.pequeno { font-size: .85em !important; padding: .6em 1.2em !important}
+	// &.medio { font-size: 1.3em !important;}
+	// &.grande { font-size: 1.5em !important; padding: .7em 1.5em !important;}
+}
+
+// leia mais
+a.more-link {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+// definicoes
+.clear { clear: both; }
+
+.hidden { display: none; }
+
+// alinhamentos
+.esq {text-align: left !important;}
+.dir, .has-text-align-right {text-align: right !important;}
+.center, .has-text-align-center {text-align: center !important;}
+
+// sem margem
+.sem-margem-acima { margin-top: 0 !important }
+.sem-margem-abaixo { margin-bottom: 0 !important }
+
+
+// container padrao
+.container{
+	width: $container;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (max-width: #{$container + 32}) {
+		width: 100%;
+		padding: 40px;
+	}
+}
+
+
+
+/****************************************
+ ----------------------------------------
+ * PADRAO ANTIGO WORDPRESS *
+ ----------------------------------------
+ ****************************************/
+
+.alignnone, a img.alignnone {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.aligncenter, a img.aligncenter {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+.alignright, a img.alignright {
+    float:right;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.alignleft, a img.alignleft {
+    float: left;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+// alinhamentos via guttenberg
+.has-text-align-center { text-align: center; }
+.has-text-align-left { text-align: left; }
+.has-text-align-right { text-align: right; }

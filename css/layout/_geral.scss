@@ -1,0 +1,119 @@
+a {
+    color: var(--grafite);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-family: $fonte-titulos;
+    font-size: 52px;
+    font-weight: normal;
+}
+
+a.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    outline: 1px solid white;
+    outline-offset: -7px;   
+}
+
+a.btn-primary {
+    background-color: var(--bege)
+}
+
+a.btn-secondary {
+    background-color: var(--verde);
+}
+
+a.btn-download {
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-size: 18px;
+}
+
+.logo {
+    width: 550px;
+    margin: 80px auto 10px;
+
+    @media (max-width: $smartphone) {
+        width: 100%;
+	}
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-bar {
+    background-color: var(--grafite);
+    padding: 10px;
+}
+
+.nav-bar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.nav-bar-item {
+    margin: 0 15px;
+}
+
+a.nav-link {
+    color: var(--fundo);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pages-background {
+    background-image: url("../imgs/fundo-pgsinternas.png")
+}
+
+.footer {
+    background-color: var(--grafite);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+    @media (max-width: $smartphone) {
+        flex-direction: column;
+        align-items: center;
+	}
+}
+
+.footer-logo {
+    width: 300px
+}
+
+.footer-credits {
+    @media (max-width: $smartphone) {
+        margin-top: 30px;
+	}
+}
+
+.footer-credit-image {
+    width: 200px
+}
+
+.footer-credit-text {
+    color: var(--fundo);
+    font-style: italic;
+    text-align: right;
+}

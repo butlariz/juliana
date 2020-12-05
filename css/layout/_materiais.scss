@@ -1,0 +1,140 @@
+.materiais-de-apoio {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.materiais-home {
+    background-color: var(--bege-claro);
+}
+
+.materiais-bitmoji {
+    margin-left: -20px;
+
+    @media (max-width: $smartphone) {
+        display: none;
+	}
+}
+
+.materiais-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @media (max-width: $smartphone) {
+        margin-top: 0;
+        padding-top: 0;
+        flex-wrap: wrap;
+	}
+}
+
+.materiais-item {
+    background-color: white;
+    width: 23%;
+    height: 270px;
+    text-align: center;
+
+    @media (max-width: $smartphone) {
+        width: 100%;
+        margin-bottom: 20px;
+	}
+}
+
+.materiais-item-mask {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffb5;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.materiais-text {
+    background-color: var(--fundo);
+    padding: 20px;
+    height: 90%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.materiais-category {
+    text-align: center;
+}
+
+.materiais-category-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--verde-escuro);
+    display: flex;
+    flex-direction: column;
+}
+
+.materiais-title {
+    margin-top: 20px;
+}
+
+.materiais-icon {
+    color: white;
+    background-color: var(--verde-escuro);
+    padding: 10px;
+    border-radius: 100%;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    margin-top: -35px;
+    z-index: 1;
+    position: relative;
+    border: #999 solid 3px;
+    box-shadow: 0px 0px 0px 3px #fff inset;
+}
+
+a.materiais-link {
+    color: var(--bege-escuro);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.materiais-footer {
+    text-align: right;
+    margin-top: 20px;
+
+    @media (max-width: $smartphone) {
+        margin-top: 30px;
+        padding: 0 40px;
+	}
+}
+
+.materiais-footer:before {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 150px;
+    background: url(../imgs/bitmoji-3.png) no-repeat;
+    background-size: 100%;
+    margin-top: -110px;
+    margin-left: -60px;
+    position: absolute;
+
+    @media (max-width: $smartphone) {
+        margin-top: -50%;
+        position: relative;
+	}
+}
+
+.materiais-content-footer {
+    margin: 50px;
+
+    @media (max-width: $smartphone) {
+        margin-top: 0px;
+	}
+}
+
+.materiais-content-link {
+    background-color: var(--bege)
+}
