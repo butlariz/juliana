@@ -4,12 +4,6 @@
 @import "padroes/formatacoes";
 @import "padroes/fancybox";
 @import "padroes/fontawesome";
-@import "layout/contact";
-@import "layout/geral";
-@import "layout/materiais";
-@import "layout/newsletter";
-@import "layout/post";
-@import "layout/sobre";
 
 
 /////// LAYOUT
@@ -46,3 +40,10 @@ body {
 	}
 	
 }
+
+@import "layout/contact";
+@import "layout/geral";
+@import "layout/materiais";
+@import "layout/newsletter";
+@import "layout/post";
+@import "layout/sobre";
